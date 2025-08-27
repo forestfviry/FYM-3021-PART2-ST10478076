@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FYM3021- Future Youth Museum Clothing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #aaa;
+    }
+
+    section {
+      padding: 50px 10%;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .subnav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .subnav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    .subnav a:hover {
+      border-bottom: 2px solid #000;
+    }
+
+    .category {
+      margin-bottom: 60px;
+    }
+
+    .category-desc {
+      text-align: center;
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: #f8f8f8;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #444;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>FYM 3021- FUTURE YOUTH MUSEUM</h1>
+    <nav>
+	<a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="about.html">About</a>
+	  <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <h1>Shop Our Collection</h1>
+
+    
+
+    <!-- Shirts Section -->
+    <div class="category">
+      <h2 id="shirts">Shirts</h2>
+      <p class="category-desc">Explore our 3021 Falcon Shirt collection!!! JOIN THE FYM3021 FAMILY BY PURCHASING.</p>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/7.jpg" alt="3021 Lucid Shirt">
+          <h3>3021 Lucid Shirt</h3>
+          <p class="price">R200</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/26.jpg" alt="3021 Falcon Collection">
+          <h3>3021 Lucid Shirt</h3>
+          <p class="price">R200</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/23.jpg" alt="3021 Falcon Shirt">
+          <h3>3021 Falcon Shirt</h3>
+          <p class="price">R200</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hoodies Section -->
+     <div class="category">
+      <h2 id="Hoodies">Hoodies</h2>
+      <p class="category-desc">Explore our 3021 Falcon Hoodie collection!!! JOIN THE FYM3021 FAMILY BY PURCHASING.</p>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/17.jpg" alt="Grey 3021 Lucid HOODIES!!">
+          <h3>3021 Lucid Hoodie</h3>
+          <p class="price">R600</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/2.jpg" alt="3021 Falcon Collection">
+          <h3>3021 Lucid Hoodie</h3>
+          <p class="price">R600</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/22.jpg" alt="Blue 3021 Falcon Hoodie">
+          <h3>3021 Falcon Hoodie</h3>
+          <p class="price">R200</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+        
+
+    <!-- Sportswear Section -->
+   <div class="category">
+      <h2 id="Sportswear">Sportswear</h2>
+      <p class="category-desc">Explore our 3021 Falcon Sportswear collection!!! JOIN THE FYM3021 FAMILY BY PURCHASING.</p>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/1.jpg" alt="White 3021 Two piece!!">
+          <h3>3021 Original Two piece</h3>
+          <p class="price">R300</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/12.jpg" alt="3021 Falcon Collection">
+          <h3>3021 Red Bodysuit</h3>
+          <p class="price">R350</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/11.jpg" alt="Black 3021 Bodysuit">
+          <h3>Black 3021 Bodysuie</h3>
+          <p class="price">R350</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Tina Jeke ST10478076
+  </footer>
+
+</body>
+</html>
