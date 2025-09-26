@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FYM3021 Clothing</title>
+
+  <!-- Favicon / Tab Logo -->
+  <link rel="icon" href="images/logo.png" type="image/png">
+
+  <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at center, #f0f0f0 0%, #000000 60%);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 3px solid #ff0000; /* Red accent on header bottom */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(255,0,0,0.2); /* subtle red glow */
+    }
+
+    header img.logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    header img.logo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff0000;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s, border-bottom 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      color: #ff4444; /* Red hover on nav links */
+      border-bottom: 2px solid #ff0000;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 700;
+      color: #ff4444; /* subtle red headings */
+    }
+
+    .brand-history {
+      background: #000;
+      color: #fff;
+      border: 3px solid #ff0000; /* Red border */
+      border-radius: 12px;
+      padding: 25px;
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: justify;
+      box-shadow: 0 4px 12px rgba(255,0,0,0.2); /* subtle red shadow */
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      border-top: 3px solid #ff0000; /* Red accent */
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .brand-history {
+        padding: 20px;
+      }
+      h1, h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      header {
+        font-size: 1.5rem;
+        padding: 15px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+      }
+      h1, h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/logo.png" alt="FYM3021 Logo" class="logo">
+    <h1>FYM3021 Clothing</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Video Section -->
+  <section>
+    <h2>FYM 3021</h2>
+    <div style="text-align:center;">
+      <video width="800" autoplay muted loop>
+        <source src="images/aave.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- Brand History Section -->
+  <section>
+    <div class="brand-history">
+      The history of the website starts with the creator “Mniac”. 
+      The brand was started in the year 2022, with just one teenage boy who wanted to make a difference in the South African creative and clothing industry. 
+      There were not that many brands that took teenagers into consideration. 
+      Only a plethora of clothes were targeted to young children, toddlers, babies, adults as well as tweens but never to teenagers. 
+      This brand was born to have teenagers and youth have a singular brand they can purchase from. With high quality hoodies, shirts and Sports-Wear, 
+      FYM3021 was the foundation to teenagers in South Africa and all around the world. This brand was born to merge clothing and creativity into a singular aspect, 
+      despite the fast-pacing growth in trends and popularity. FYM3021 paved its way in staying relevant through young, teenage South African models, 
+      rappers and creators making it popular amongst youth.
+    </div>
+  </section>
+<section class="newsletter">
+  <h2>BE A PART OF THE COOL KIDS</h2>
+  <p>Get the latest BRAND updates and exclusive offers straight to your inbox!</p>
+  <form action="#" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+  <!-- Footer -->
+  <footer>
+    &copy; Tina Jeke ST10478076
+  </footer>
+
+</body>
+</html>
