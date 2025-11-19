@@ -1,0 +1,206 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at center, #f0f0f0 0%, #000000 60%);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #ff0000; /* Red accent on header bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(255,0,0,0.2);
+}
+
+header img.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header img.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff0000;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #ff4444;
+  border-bottom: 2px solid #ff0000;
+}
+
+/* Section styling */
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #ff4444;
+}
+
+/* Brand History Section */
+.brand-history {
+  background: #000;
+  color: #fff;
+  border: 3px solid #ff0000;
+  border-radius: 12px;
+  padding: 25px;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  box-shadow: 0 4px 12px rgba(255,0,0,0.2);
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: #111;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 50px auto 30px auto;
+  max-width: 800px;
+  animation: bounce 2s infinite;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  max-width: 80%;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter input[type="email"]:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fff;
+}
+
+.newsletter button {
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  color: #111;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #333;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top: 3px solid #ff0000;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .brand-history {
+    padding: 20px;
+  }
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  nav a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}

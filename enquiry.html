@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Enquire about FYM3021 services, products, or sponsorship opportunities.">
+  <meta name="keywords" content="enquiry, FYM3021, sponsor, volunteer, products, services">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry - FYM3021</title>
+  
+    <link rel="icon" href="images/logo.png" type="image/png">
+	
+   <link rel="stylesheet" href="css/enquiry.css">
+   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/logo.png" alt="FYM3021 Logo" class="logo">
+    <h1>FYM3021 ENQUIRY</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+	   <a href="enquiry.html">Enquiry</a>
+    </nav>
+  </header>
+
+ <!-- Enquiry Section -->
+<section class="enquiry-section">
+  <h2>Make an Enquiry</h2>
+  <p class="intro">
+    Whether you're interested in our products, services, or joining FYM3021 as a sponsor or volunteer, we’d love to hear from you.
+  </p>
+
+  <form id="enquiryForm" action="submit_enquiry.php" method="POST" class="enquiry-form">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+27651234567" required>
+
+    <label for="interest">Interested In:</label>
+    <select id="interest" name="interest" required>
+      <option value="">-- Select --</option>
+      <option value="services">Services</option>
+      <option value="products">Products</option>
+      <option value="volunteer">Volunteering</option>
+      <option value="sponsor">Sponsorship</option>
+    </select>
+
+    <label for="details">Details:</label>
+    <textarea id="details" name="details" rows="5" placeholder="Tell us more..." required></textarea>
+
+    <label for="date">Preferred Contact Date (optional):</label>
+    <input type="date" id="date" name="date">
+
+    <button type="submit" class="btn">Submit Enquiry</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; FYM3021 | Designed by Tina Jeke ST10478076
+  </footer>
+
+  <!-- External JS -->
+  <script src="javascript/enquiry.js"></script>
+  
+  <div id="successPopup" class="success-popup">
+  <i class="fa-solid fa-check"></i>
+  Your enquiry has been submitted successfully!
+</div>
+
+</body>
+</html>

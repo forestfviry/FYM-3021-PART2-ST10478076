@@ -1,0 +1,364 @@
+/* ------------------------------
+   RESET & BASE STYLES
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at center, #f0f0f0 0%, #000000 60%);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+header {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #ff0000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(255,0,0,0.2);
+}
+
+header img.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header img.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff0000;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ff4444;
+  border-bottom: 2px solid #ff0000;
+}
+
+/* ------------------------------
+   SECTIONS
+------------------------------ */
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #ff4444;
+}
+
+/* ------------------------------
+   BRAND HISTORY (optional)
+------------------------------ */
+.brand-history {
+  background: #000;
+  color: #fff;
+  border: 3px solid #ff0000;
+  border-radius: 12px;
+  padding: 25px;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  box-shadow: 0 4px 12px rgba(255,0,0,0.2);
+}
+
+/* ------------------------------
+   NEWSLETTER
+------------------------------ */
+.newsletter {
+  background: #111;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 50px auto 30px auto;
+  max-width: 800px;
+  animation: bounce 2s infinite;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  max-width: 80%;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter input[type="email"]:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fff;
+}
+
+.newsletter button {
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  color: #111;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #333;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   GLASS CARD ENQUIRY SECTION (Centered & Readable)
+------------------------------ */
+.enquiry-section {
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+  padding: 60px 25px;
+  border-radius: 20px;
+  margin: 50px auto;
+  max-width: 700px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.8);
+  text-align: center;
+  border: 2px solid rgba(255,255,255,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease forwards;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enquiry-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.9);
+}
+
+.enquiry-section .intro {
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #eee;
+  text-align: center;
+}
+
+.enquiry-form {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+  background: rgba(40,40,40,0.7);
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 18px #f90;
+  border: 1px solid #f90;
+}
+
+.enquiry-form .btn {
+  justify-self: center;
+  padding: 15px 35px;
+  background: linear-gradient(45deg, #f90, #ffb347);
+  color: #111;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255,165,0,0.5);
+}
+
+.enquiry-form .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(255,165,0,0.7);
+  background: linear-gradient(45deg, #ffa500, #ffcc66);
+}
+
+/* Success Popup */
+.success-popup {
+  position: fixed;
+  top: 20px;
+  right: -100%;
+  background: rgba(40, 200, 100, 0.9);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: right 0.5s ease;
+  z-index: 9999;
+}
+
+.success-popup i {
+  font-size: 1.5rem;
+}
+
+.success-popup.show {
+  right: 20px;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top: 3px solid #ff0000;
+}
+
+/* ------------------------------
+   ANIMATIONS
+------------------------------ */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 992px) {
+  section, .newsletter, .enquiry-section {
+    padding: 30px 15px;
+  }
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px;
+  }
+  header img.logo {
+    width: 90px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  nav a {
+    margin: 5px 8px;
+    font-size: 0.9rem;
+  }
+  .enquiry-section {
+    padding: 30px 10px;
+  }
+  .newsletter {
+    padding: 30px 10px;
+    margin: 30px 10px;
+  }
+  .newsletter input[type="email"],
+  .newsletter button {
+    width: 90%;
+    padding: 12px;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}

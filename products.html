@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FYM3021 Clothing</title>
+
+<!-- Favicon / Tab Logo -->
+<link rel="icon" href="images/logo.png" type="image/png">
+
+<!-- Google Font: Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="css/shop.css">
+<link rel="stylesheet" href="css/productlist.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <img src="images/logo.png" alt="FYM3021 Logo" class="logo">
+  <h1>FYM3021 Clothing</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="enquiry.html">Enquiry</a>
+  </nav>
+</header>
+
+<!-- Shop Section -->
+<section id="shop">
+  <h1>WELCOME TO FYM3021, PRESS "SHOP" TO PURCHASE ON OUR BRAND WHILE STOCKS LAST!</h1>
+
+
+  <!-- Search and Filter Controls -->
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search products...">
+    <select id="category-filter">
+      <option value="all">All Categories</option>
+      <option value="Shirts">Shirts</option>
+      <option value="Hoodies">Hoodies</option>
+      <option value="Sportswear">Sportswear</option>
+    </select>
+    <select id="sort">
+      <option value="default">Sort By</option>
+      <option value="price-asc">Price: Low → High</option>
+      <option value="price-desc">Price: High → Low</option>
+      <option value="name-asc">Name: A → Z</option>
+    </select>
+  </div>
+
+  <!-- Shirts Section -->
+  <div class="category" data-category="Shirts">
+    <h2 id="shirts">Shirts</h2>
+    <p class="category-desc">EXPLORE OUR 3021 FALCON COLLECTION.</p>
+    <div class="product-grid">
+      <div class="product" data-name="3021 Falcon Shirt" data-price="200">
+        <img src="images/7.jpg" alt="Black 3021 Falcon Shirt">
+        <h3>3021 Falcon Shirt</h3>
+        <p class="price">R600</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+      <div class="product" data-name="3021 Falcon Shirt" data-price="200">
+        <img src="images/6.jpg" alt="Black 3021 Falcon Shirt">
+        <h3>3021 Falcon Shirt</h3>
+        <p class="price">R200</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+      <div class="product" data-name="3021 Falcon Shirt" data-price="200">
+        <img src="images/23.jpg" alt="Black 3021 Falcon Shirt">
+        <h3>3021 Falcon Shirt</h3>
+        <p class="price">R200</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hoodies Section -->
+  <div class="category" data-category="Hoodies">
+    <h2 id="hoodies">Hoodies</h2>
+    <p class="category-desc">EXPLORE OUR 3021 FALCON COLLECTION.</p>
+    <div class="product-grid">
+      <div class="product" data-name="3021 Original Hoodie" data-price="600">
+        <img src="images/abb.jpg" alt="Two female models in Dark Grey 3021 Original Hoodie">
+        <h3>3021 Original Hoodie</h3>
+        <p class="price">R600</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+      <div class="product" data-name="3021 Lucid Hoodie" data-price="600">
+        <img src="images/22.jpg" alt="Man in blue 3021 Lucid Hoodie">
+        <h3>3021 Lucid Hoodie</h3>
+        <p class="price">R600</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+      <div class="product" data-name="3021 Lucid Hoodie" data-price="600">
+        <img src="images/17.jpg" alt="Two models hugging in light grey 3021 Lucid Hoodie">
+        <h3>3021 Lucid Hoodie</h3>
+        <p class="price">R600</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sportswear Section -->
+  <div class="category" data-category="Sportswear">
+    <h2 id="sportswear">Sportswear</h2>
+    <p class="category-desc">EXPLORE OUR 3021 FALCON COLLECTION.</p>
+    <div class="product-grid">
+      <div class="product" data-name="3021 Falcon Set" data-price="200">
+        <img src="images/19.jpg" alt="White 3021 Lucid Sportswear">
+        <h3>3021 Falcon Set</h3>
+        <p class="price">R200</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+      <div class="product" data-name="3021 Lucid Set" data-price="200">
+        <img src="images/1.jpg" alt="White 3021 Lucid Sportswear">
+        <h3>3021 Lucid Set</h3>
+        <p class="price">R200</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+      <div class="product" data-name="3021 Lucid Set" data-price="200">
+        <img src="images/12.jpg" alt="Red 3021 Lucid Sportswear">
+        <h3>3021 Lucid Set</h3>
+        <p class="price">R200</p>
+        <a href="enquiry.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+ <h2>BE A PART OF THE COOL KIDS</h2>
+  <p>Get the latest BRAND updates and exclusive offers straight to your inbox!</p>
+  <form action=" " method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; Tina Jeke ST10478076
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- External JS files -->
+<script src="javascript/accordion.js"></script>
+<script src="javascript/header.js"></script>
+<script src="js/modal.js"></script>
+<script src="javascript/productlist.js"></script> 
+
+</body>
+</html>
